@@ -1,3 +1,5 @@
-import { invokeDom } from "../domManipulation/invokeDom";
+import {invokeDomContent} from "./indexDomContent";
+import { invokeButtonDom } from "../sideBar/sideBarButtonContent";
 import "./index.css";
-invokeDom();
+invokeDomContent();
+invokeButtonDom();

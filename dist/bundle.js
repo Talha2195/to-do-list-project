@@ -110,33 +110,53 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/domManipulation/dom.js":
-/*!************************************!*\
-  !*** ./src/domManipulation/dom.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createDom: () => (/* binding */ createDom)\n/* harmony export */ });\nclass createDom {\n    constructor(container, type, id, text) {\n        this.container = container;\n        this.type = type;\n        this.id = id;\n        this.text = text;\n    }\n    makeDom () {\n        const container = document.querySelector(this.container);\n        const content = document.createElement(this.type);\n        content.classList.add(this.id);\n        content.textContent = this.text;\n        container.appendChild(content);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/domManipulation/dom.js?");
-
-/***/ }),
-
-/***/ "./src/domManipulation/invokeDom.js":
-/*!******************************************!*\
-  !*** ./src/domManipulation/invokeDom.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeDom: () => (/* binding */ invokeDom)\n/* harmony export */ });\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom */ \"./src/domManipulation/dom.js\");\n\nfunction invokeDom (){    \nconst sideBar = new _dom__WEBPACK_IMPORTED_MODULE_0__.createDom('body', 'div', 'sideBar','Side Bar');\nsideBar.makeDom();\nconst contentPage = new _dom__WEBPACK_IMPORTED_MODULE_0__.createDom('body', 'div', 'content', 'Content Area');\ncontentPage.makeDom();\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/domManipulation/invokeDom.js?");
-
-/***/ }),
-
 /***/ "./src/index/index.js":
 /*!****************************!*\
   !*** ./src/index/index.js ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domManipulation_invokeDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../domManipulation/invokeDom */ \"./src/domManipulation/invokeDom.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ \"./src/index/index.css\");\n\n\n(0,_domManipulation_invokeDom__WEBPACK_IMPORTED_MODULE_0__.invokeDom)();\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexDomContent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./indexDomContent */ \"./src/index/indexDomContent.js\");\n/* harmony import */ var _sideBar_sideBarButtonContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sideBar/sideBarButtonContent */ \"./src/sideBar/sideBarButtonContent.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index/index.css\");\n\n\n\n(0,_indexDomContent__WEBPACK_IMPORTED_MODULE_0__.invokeDomContent)();\n(0,_sideBar_sideBarButtonContent__WEBPACK_IMPORTED_MODULE_1__.invokeButtonDom)();\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.js?");
+
+/***/ }),
+
+/***/ "./src/index/indexDom.js":
+/*!*******************************!*\
+  !*** ./src/index/indexDom.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createDom: () => (/* binding */ createDom)\n/* harmony export */ });\nclass createDom {\n    constructor(container, type, id, text) {\n        this.container = container;\n        this.type = type;\n        this.id = id;\n        this.text = text;\n    }\n    makeIndexDom () {\n        const container = document.querySelector(this.container);\n        const content = document.createElement(this.type);\n        content.classList.add(this.id);\n        content.textContent = this.text;\n        container.appendChild(content);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/indexDom.js?");
+
+/***/ }),
+
+/***/ "./src/index/indexDomContent.js":
+/*!**************************************!*\
+  !*** ./src/index/indexDomContent.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeDomContent: () => (/* binding */ invokeDomContent)\n/* harmony export */ });\n/* harmony import */ var _indexDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./indexDom */ \"./src/index/indexDom.js\");\n\nfunction invokeDomContent (){    \nconst sideBar = new _indexDom__WEBPACK_IMPORTED_MODULE_0__.createDom('body', 'div', 'sideBar','Side Bar');\nsideBar.makeIndexDom();\nconst contentPage = new _indexDom__WEBPACK_IMPORTED_MODULE_0__.createDom('body', 'div', 'content', 'Content Area');\ncontentPage.makeIndexDom();\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/indexDomContent.js?");
+
+/***/ }),
+
+/***/ "./src/sideBar/sideBarButtonContent.js":
+/*!*********************************************!*\
+  !*** ./src/sideBar/sideBarButtonContent.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeButtonDom: () => (/* binding */ invokeButtonDom)\n/* harmony export */ });\n/* harmony import */ var _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sideBarButtonDom */ \"./src/sideBar/sideBarButtonDom.js\");\n\nfunction invokeButtonDom () {\n    const buttonOne = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('Search', 'search');\n    const buttonTwo = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('Home', 'home');\n    const buttonThree = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('New', 'newNote');\n    const buttonFour = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('Today', 'today');\n    const buttonFive = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('Upcoming', 'upcoming');\n    buttonOne.makeButtonDom();\n    buttonTwo.makeButtonDom();\n    buttonThree.makeButtonDom();\n    buttonFour.makeButtonDom();\n    buttonFive.makeButtonDom();\n}\n\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonContent.js?");
+
+/***/ }),
+
+/***/ "./src/sideBar/sideBarButtonDom.js":
+/*!*****************************************!*\
+  !*** ./src/sideBar/sideBarButtonDom.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   buttomDom: () => (/* binding */ buttomDom)\n/* harmony export */ });\nclass buttomDom {\n    constructor (text,id) {\n        this.text = text;\n        this.id = id;\n    }\n    makeButtonDom (){\n        const container = document.querySelector('#sideBar')\n        const x = document.createElement('button');\n        x.textContent = this.text;\n        x.setAttribute('type', this.id);\n        container.appendChild(x);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonDom.js?");
 
 /***/ })
 

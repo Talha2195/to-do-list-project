@@ -5,7 +5,7 @@ class createDom {
         this.id = id;
         this.text = text;
     }
-    makeDom () {
+    makeIndexDom () {
         const container = document.querySelector(this.container);
         const content = document.createElement(this.type);
         content.classList.add(this.id);
