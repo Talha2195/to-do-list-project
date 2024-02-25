@@ -16,7 +16,7 @@
   \*******************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body{\n    background-color: black;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body{\n    display:grid;\n    background-color: black;\n    grid-template-columns: 200px 1240px;\n}\n.sideBar {\n    background-color: blue;\n}\n.content {\n    height:800px;\n    background-color: white;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -110,23 +110,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/domManipulation/dom.js":
+/*!************************************!*\
+  !*** ./src/domManipulation/dom.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createDom: () => (/* binding */ createDom)\n/* harmony export */ });\nclass createDom {\n    constructor(container, type, id, text) {\n        this.container = container;\n        this.type = type;\n        this.id = id;\n        this.text = text;\n    }\n    makeDom () {\n        const container = document.querySelector(this.container);\n        const content = document.createElement(this.type);\n        content.classList.add(this.id);\n        content.textContent = this.text;\n        container.appendChild(content);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/domManipulation/dom.js?");
+
+/***/ }),
+
+/***/ "./src/domManipulation/invokeDom.js":
+/*!******************************************!*\
+  !*** ./src/domManipulation/invokeDom.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeDom: () => (/* binding */ invokeDom)\n/* harmony export */ });\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom */ \"./src/domManipulation/dom.js\");\n\nfunction invokeDom (){    \nconst sideBar = new _dom__WEBPACK_IMPORTED_MODULE_0__.createDom('body', 'div', 'sideBar','Side Bar');\nsideBar.makeDom();\nconst contentPage = new _dom__WEBPACK_IMPORTED_MODULE_0__.createDom('body', 'div', 'content', 'Content Area');\ncontentPage.makeDom();\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/domManipulation/invokeDom.js?");
+
+/***/ }),
+
 /***/ "./src/index/index.js":
 /*!****************************!*\
   !*** ./src/index/index.js ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ \"./src/index/test.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ \"./src/index/index.css\");\n\n\n(0,_test__WEBPACK_IMPORTED_MODULE_0__.test)();\nconsole.log(\"what's up?\");\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.js?");
-
-/***/ }),
-
-/***/ "./src/index/test.js":
-/*!***************************!*\
-  !*** ./src/index/test.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   test: () => (/* binding */ test)\n/* harmony export */ });\nfunction test () {\n    console.log(\"Yeah it works\");\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/test.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domManipulation_invokeDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../domManipulation/invokeDom */ \"./src/domManipulation/invokeDom.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ \"./src/index/index.css\");\n\n\n(0,_domManipulation_invokeDom__WEBPACK_IMPORTED_MODULE_0__.invokeDom)();\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.js?");
 
 /***/ })
 

@@ -1,3 +1,12 @@
 body{
+    display:grid;
     background-color: black;
+    grid-template-columns: 200px 1240px;
+}
+.sideBar {
+    background-color: blue;
+}
+.content {
+    height:800px;
+    background-color: white;
 }

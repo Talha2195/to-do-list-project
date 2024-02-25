@@ -1,4 +1,3 @@
-import {test} from "./test";
+import { invokeDom } from "../domManipulation/invokeDom";
 import "./index.css";
-test();
-console.log("what's up?");
+invokeDom();
