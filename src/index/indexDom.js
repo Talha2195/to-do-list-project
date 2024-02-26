@@ -8,7 +8,7 @@ class createDom {
     makeIndexDom () {
         const container = document.querySelector(this.container);
         const content = document.createElement(this.type);
-        content.classList.add(this.id);
+        content.setAttribute('id', this.id);
         content.textContent = this.text;
         container.appendChild(content);
     }

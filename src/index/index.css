@@ -3,10 +3,13 @@ body{
     background-color: black;
     grid-template-columns: 200px 1240px;
 }
-.sideBar {
+#sideBar {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: blue;
 }
-.content {
+#content {
     height:800px;
     background-color: white;
 }
