@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexDomContent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./indexDomContent */ \"./src/index/indexDomContent.js\");\n/* harmony import */ var _sideBar_sideBarButtonContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sideBar/sideBarButtonContent */ \"./src/sideBar/sideBarButtonContent.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index/index.css\");\n\n\n\n(0,_indexDomContent__WEBPACK_IMPORTED_MODULE_0__.invokeDomContent)();\n(0,_sideBar_sideBarButtonContent__WEBPACK_IMPORTED_MODULE_1__.invokeButtonDom)();\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexDomContent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./indexDomContent */ \"./src/index/indexDomContent.js\");\n/* harmony import */ var _sideBar_sideBarButtonContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sideBar/sideBarButtonContent */ \"./src/sideBar/sideBarButtonContent.js\");\n/* harmony import */ var _notePage_notePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../notePage/notePage */ \"./src/notePage/notePage.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ \"./src/index/index.css\");\n\n\n\n\n(0,_indexDomContent__WEBPACK_IMPORTED_MODULE_0__.invokeDomContent)();\n(0,_sideBar_sideBarButtonContent__WEBPACK_IMPORTED_MODULE_1__.invokeButtonDom)();\nconst noteButton = document.getElementById('newNote');\nnoteButton.addEventListener('click',_notePage_notePage__WEBPACK_IMPORTED_MODULE_2__.loadNotePage);\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.js?");
 
 /***/ }),
 
@@ -130,6 +130,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/miscModules/clearPage.js":
+/*!**************************************!*\
+  !*** ./src/miscModules/clearPage.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   clearContentPage: () => (/* binding */ clearContentPage)\n/* harmony export */ });\nfunction clearContentPage () {\n    const content = document.querySelector('#content');\n    content.innerHTML = ' ';\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/clearPage.js?");
+
+/***/ }),
+
 /***/ "./src/miscModules/dividantDom.js":
 /*!****************************************!*\
   !*** ./src/miscModules/dividantDom.js ***!
@@ -140,13 +150,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/miscModules/typeInput.js":
-/*!**************************************!*\
-  !*** ./src/miscModules/typeInput.js ***!
-  \**************************************/
+/***/ "./src/miscModules/typeInputDom.js":
+/*!*****************************************!*\
+  !*** ./src/miscModules/typeInputDom.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   inputDom: () => (/* binding */ inputDom)\n/* harmony export */ });\nclass inputDom {\n    constructor (body,element,text,id) {\n        this.body = body;\n        this.element = element;\n        this.text = text;\n        this.id = id;\n    }\n    makeInputDom (){\n        const container = document.querySelector(this.body)\n        const content = document.createElement(this.element);\n        content.textContent = this.text;\n        content.setAttribute('id', this.id);\n        container.appendChild(content);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/typeInput.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   inputDom: () => (/* binding */ inputDom)\n/* harmony export */ });\nclass inputDom {\n    constructor (body,element,text,id) {\n        this.body = body;\n        this.element = element;\n        this.text = text;\n        this.id = id;\n    }\n    makeInputDom (){\n        const container = document.querySelector(this.body)\n        const content = document.createElement(this.element);\n        content.textContent = this.text;\n        content.setAttribute('id', this.id);\n        container.appendChild(content);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/typeInputDom.js?");
+
+/***/ }),
+
+/***/ "./src/notePage/notePage.js":
+/*!**********************************!*\
+  !*** ./src/notePage/notePage.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadNotePage: () => (/* binding */ loadNotePage)\n/* harmony export */ });\n/* harmony import */ var _miscModules_clearPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/clearPage */ \"./src/miscModules/clearPage.js\");\n/* harmony import */ var _notePageDom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./notePageDom */ \"./src/notePage/notePageDom.js\");\n\n\nfunction loadNotePage (){\n    (0,_miscModules_clearPage__WEBPACK_IMPORTED_MODULE_0__.clearContentPage)();\n    (0,_notePageDom__WEBPACK_IMPORTED_MODULE_1__.invokeTextFieldDom)();\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/notePage/notePage.js?");
+
+/***/ }),
+
+/***/ "./src/notePage/notePageDom.js":
+/*!*************************************!*\
+  !*** ./src/notePage/notePageDom.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeTextFieldDom: () => (/* binding */ invokeTextFieldDom)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n\nfunction invokeTextFieldDom () {\n    const labelFieldOne = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#content', 'label', 'Title', 'title');\n    const textFieldOne = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#content', 'input', '', 'title');\n    const labelFieldTwo = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#content', 'label', 'Description', 'description');\n    const textFieldTwo = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#content', 'input', '', 'description');\n    const labelFieldThree = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#content', 'label', 'Notes', 'note');\n    const textFieldThree = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#content', 'input', '', 'note');\n    labelFieldOne.makeInputDom();\n    textFieldOne.makeInputDom();\n    labelFieldTwo.makeInputDom();\n    textFieldTwo.makeInputDom();\n    labelFieldThree.makeInputDom();\n    textFieldThree.makeInputDom();\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/notePage/notePageDom.js?");
 
 /***/ }),
 
@@ -156,7 +186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeButtonDom: () => (/* binding */ invokeButtonDom)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/typeInput */ \"./src/miscModules/typeInput.js\");\n\nfunction invokeButtonDom () {\n    const buttonOne = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Search', 'search');\n    const buttonTwo = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Home', 'home');\n    const buttonThree = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'New note', 'newNote');\n    const buttonFour = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Today', 'today');\n    const buttonFive = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Upcoming', 'upcoming');\n    const buttonsix = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'New Project', 'newProject');\n    buttonOne.makeInputDom();\n    buttonTwo.makeInputDom();\n    buttonThree.makeInputDom();\n    buttonFour.makeInputDom();\n    buttonFive.makeInputDom();\n    buttonsix.makeInputDom();\n}\n\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonContent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeButtonDom: () => (/* binding */ invokeButtonDom)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n\nfunction invokeButtonDom () {\n    const buttonOne = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Search', 'search');\n    const buttonTwo = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Home', 'home');\n    const buttonThree = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'New note', 'newNote');\n    const buttonFour = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Today', 'today');\n    const buttonFive = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Upcoming', 'upcoming');\n    const buttonsix = new _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'New Project', 'newProject');\n    buttonOne.makeInputDom();\n    buttonTwo.makeInputDom();\n    buttonThree.makeInputDom();\n    buttonFour.makeInputDom();\n    buttonFive.makeInputDom();\n    buttonsix.makeInputDom();\n}\n\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonContent.js?");
 
 /***/ })
 

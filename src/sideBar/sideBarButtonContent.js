@@ -1,4 +1,4 @@
-import { inputDom } from "../miscModules/typeInput";
+import { inputDom } from "../miscModules/typeInputDom";
 function invokeButtonDom () {
     const buttonOne = new inputDom ('#sideBar', 'button', 'Search', 'search');
     const buttonTwo = new inputDom ('#sideBar', 'button', 'Home', 'home');
