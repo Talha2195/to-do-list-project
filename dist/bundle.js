@@ -16,7 +16,7 @@
   \*******************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body{\n    display:grid;\n    background-color: black;\n    grid-template-columns: 200px 1240px;\n}\n#sideBar {\n    display:flex;\n    flex-direction: column;\n    justify-content: space-between;\n    background-color: blue;\n}\n#content {\n    height:800px;\n    background-color: white;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body{\n    display:grid;\n    background-color: black;\n    grid-template-columns: 300px 1240px;\n}\n#sideBar {\n    display:flex;\n    flex-direction: column;\n    background-color: blue;\n}\n#content {\n    height:800px;\n    background-color: white;\n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -120,23 +120,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 
 /***/ }),
 
-/***/ "./src/index/indexDom.js":
-/*!*******************************!*\
-  !*** ./src/index/indexDom.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createDom: () => (/* binding */ createDom)\n/* harmony export */ });\nclass createDom {\n    constructor(container, type, id, text) {\n        this.container = container;\n        this.type = type;\n        this.id = id;\n        this.text = text;\n    }\n    makeIndexDom () {\n        const container = document.querySelector(this.container);\n        const content = document.createElement(this.type);\n        content.setAttribute('id', this.id);\n        content.textContent = this.text;\n        container.appendChild(content);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/indexDom.js?");
-
-/***/ }),
-
 /***/ "./src/index/indexDomContent.js":
 /*!**************************************!*\
   !*** ./src/index/indexDomContent.js ***!
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeDomContent: () => (/* binding */ invokeDomContent)\n/* harmony export */ });\n/* harmony import */ var _indexDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./indexDom */ \"./src/index/indexDom.js\");\n\nfunction invokeDomContent (){    \nconst sideBar = new _indexDom__WEBPACK_IMPORTED_MODULE_0__.createDom('body', 'div', 'sideBar');\nsideBar.makeIndexDom();\nconst contentPage = new _indexDom__WEBPACK_IMPORTED_MODULE_0__.createDom('body', 'div', 'content', 'Content Area');\ncontentPage.makeIndexDom();\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/indexDomContent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeDomContent: () => (/* binding */ invokeDomContent)\n/* harmony export */ });\n/* harmony import */ var _miscModules_dividantDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/dividantDom */ \"./src/miscModules/dividantDom.js\");\n\nfunction invokeDomContent (){    \nconst sideBar = new _miscModules_dividantDom__WEBPACK_IMPORTED_MODULE_0__.domCreator('body', 'div', 'sideBar');\nsideBar.makeDom();\nconst contentPage = new _miscModules_dividantDom__WEBPACK_IMPORTED_MODULE_0__.domCreator('body', 'div', 'content', 'Content Area');\ncontentPage.makeDom();\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/indexDomContent.js?");
+
+/***/ }),
+
+/***/ "./src/miscModules/dividantDom.js":
+/*!****************************************!*\
+  !*** ./src/miscModules/dividantDom.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   domCreator: () => (/* binding */ domCreator)\n/* harmony export */ });\nclass domCreator {\n    constructor(container, type, id, text) {\n        this.container = container;\n        this.type = type;\n        this.id = id;\n        this.text = text;\n    }\n    makeDom () {\n        const container = document.querySelector(this.container);\n        const content = document.createElement(this.type);\n        content.setAttribute('id', this.id);\n        content.textContent = this.text;\n        container.appendChild(content);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/dividantDom.js?");
+
+/***/ }),
+
+/***/ "./src/miscModules/typeInput.js":
+/*!**************************************!*\
+  !*** ./src/miscModules/typeInput.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   inputDom: () => (/* binding */ inputDom)\n/* harmony export */ });\nclass inputDom {\n    constructor (body,element,text,id) {\n        this.body = body;\n        this.element = element;\n        this.text = text;\n        this.id = id;\n    }\n    makeInputDom (){\n        const container = document.querySelector(this.body)\n        const content = document.createElement(this.element);\n        content.textContent = this.text;\n        content.setAttribute('id', this.id);\n        container.appendChild(content);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/typeInput.js?");
 
 /***/ }),
 
@@ -146,17 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeButtonDom: () => (/* binding */ invokeButtonDom)\n/* harmony export */ });\n/* harmony import */ var _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sideBarButtonDom */ \"./src/sideBar/sideBarButtonDom.js\");\n\nfunction invokeButtonDom () {\n    const buttonOne = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('Search', 'search');\n    const buttonTwo = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('Home', 'home');\n    const buttonThree = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('New', 'newNote');\n    const buttonFour = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('Today', 'today');\n    const buttonFive = new _sideBarButtonDom__WEBPACK_IMPORTED_MODULE_0__.buttomDom ('Upcoming', 'upcoming');\n    buttonOne.makeButtonDom();\n    buttonTwo.makeButtonDom();\n    buttonThree.makeButtonDom();\n    buttonFour.makeButtonDom();\n    buttonFive.makeButtonDom();\n}\n\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonContent.js?");
-
-/***/ }),
-
-/***/ "./src/sideBar/sideBarButtonDom.js":
-/*!*****************************************!*\
-  !*** ./src/sideBar/sideBarButtonDom.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   buttomDom: () => (/* binding */ buttomDom)\n/* harmony export */ });\nclass buttomDom {\n    constructor (text,id) {\n        this.text = text;\n        this.id = id;\n    }\n    makeButtonDom (){\n        const container = document.querySelector('#sideBar')\n        const x = document.createElement('button');\n        x.textContent = this.text;\n        x.setAttribute('type', this.id);\n        container.appendChild(x);\n    }\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonDom.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeButtonDom: () => (/* binding */ invokeButtonDom)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/typeInput */ \"./src/miscModules/typeInput.js\");\n\nfunction invokeButtonDom () {\n    const buttonOne = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Search', 'search');\n    const buttonTwo = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Home', 'home');\n    const buttonThree = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'New note', 'newNote');\n    const buttonFour = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Today', 'today');\n    const buttonFive = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'Upcoming', 'upcoming');\n    const buttonsix = new _miscModules_typeInput__WEBPACK_IMPORTED_MODULE_0__.inputDom ('#sideBar', 'button', 'New Project', 'newProject');\n    buttonOne.makeInputDom();\n    buttonTwo.makeInputDom();\n    buttonThree.makeInputDom();\n    buttonFour.makeInputDom();\n    buttonFive.makeInputDom();\n    buttonsix.makeInputDom();\n}\n\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonContent.js?");
 
 /***/ })
 

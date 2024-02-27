@@ -1,11 +1,11 @@
-class createDom {
+class domCreator {
     constructor(container, type, id, text) {
         this.container = container;
         this.type = type;
         this.id = id;
         this.text = text;
     }
-    makeIndexDom () {
+    makeDom () {
         const container = document.querySelector(this.container);
         const content = document.createElement(this.type);
         content.setAttribute('id', this.id);
@@ -13,4 +13,4 @@ class createDom {
         container.appendChild(content);
     }
 }
-export {createDom};
+export {domCreator};

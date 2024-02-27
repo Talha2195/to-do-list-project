@@ -1,8 +1,8 @@
-import { createDom } from "./indexDom";
+import { domCreator} from "../miscModules/dividantDom";
 function invokeDomContent (){    
-const sideBar = new createDom('body', 'div', 'sideBar');
-sideBar.makeIndexDom();
-const contentPage = new createDom('body', 'div', 'content', 'Content Area');
-contentPage.makeIndexDom();
+const sideBar = new domCreator('body', 'div', 'sideBar');
+sideBar.makeDom();
+const contentPage = new domCreator('body', 'div', 'content', 'Content Area');
+contentPage.makeDom();
 }
 export {invokeDomContent};

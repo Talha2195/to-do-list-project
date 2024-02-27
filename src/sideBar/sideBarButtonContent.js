@@ -1,14 +1,16 @@
-import { buttomDom } from "./sideBarButtonDom";
+import { inputDom } from "../miscModules/typeInput";
 function invokeButtonDom () {
-    const buttonOne = new buttomDom ('Search', 'search');
-    const buttonTwo = new buttomDom ('Home', 'home');
-    const buttonThree = new buttomDom ('New', 'newNote');
-    const buttonFour = new buttomDom ('Today', 'today');
-    const buttonFive = new buttomDom ('Upcoming', 'upcoming');
-    buttonOne.makeButtonDom();
-    buttonTwo.makeButtonDom();
-    buttonThree.makeButtonDom();
-    buttonFour.makeButtonDom();
-    buttonFive.makeButtonDom();
+    const buttonOne = new inputDom ('#sideBar', 'button', 'Search', 'search');
+    const buttonTwo = new inputDom ('#sideBar', 'button', 'Home', 'home');
+    const buttonThree = new inputDom ('#sideBar', 'button', 'New note', 'newNote');
+    const buttonFour = new inputDom ('#sideBar', 'button', 'Today', 'today');
+    const buttonFive = new inputDom ('#sideBar', 'button', 'Upcoming', 'upcoming');
+    const buttonsix = new inputDom ('#sideBar', 'button', 'New Project', 'newProject');
+    buttonOne.makeInputDom();
+    buttonTwo.makeInputDom();
+    buttonThree.makeInputDom();
+    buttonFour.makeInputDom();
+    buttonFive.makeInputDom();
+    buttonsix.makeInputDom();
 }
 export{invokeButtonDom};
