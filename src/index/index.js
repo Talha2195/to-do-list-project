@@ -1,8 +1,13 @@
 import {invokeDomContent} from "./indexDomContent";
-import { invokeButtonDom } from "../sideBar/sideBarButtonContent";
+import { invokeSideBarButton } from "../sideBar/sideBarButtonContent";
 import { loadNotePage } from "../notePage/notePage";
+import { invokeTopBarButton } from "./TopBar/topBarButton";
+import { addNote } from "../saveNote/userInputFunction";
 import "./index.css";
 invokeDomContent();
-invokeButtonDom();
+invokeSideBarButton();
+invokeTopBarButton();
+const button = document.getElementById('saveButton');
+button.addEventListener('click', addNote);
 const noteButton = document.getElementById('newNote');
 noteButton.addEventListener('click',loadNotePage);

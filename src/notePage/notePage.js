@@ -1,6 +1,6 @@
 import { clearContentPage } from "../miscModules/clearPage";
 import { invokeTextFieldDom } from "./notePageDom";
-function loadNotePage (){
+function loadNotePage () {
     clearContentPage();
     invokeTextFieldDom();
 }

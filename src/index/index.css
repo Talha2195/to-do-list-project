@@ -1,14 +1,42 @@
 body{
     display:grid;
     background-color: black;
-    grid-template-columns: 300px 1240px;
+    grid-template-areas: 
+    "topbar topbar topbar"
+    "sidebar body body"
+    "sidebar body body";
+}
+#topBar {
+    grid-area: topbar;
+    height: 40px;
+    background-color: lightcoral;
 }
 #sideBar {
+    width: 300px;
+    grid-area: sidebar;
     display:flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: lightgrey;
 }
 #content {
-    height:800px;
+    grid-area: body;
+    width: 1125px;
+    height:760px;
     background-color: white;
 }
+#inputFieldsDiv {
+    display:grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 15px 15px 15px;
+}
+#titleInput {
+    grid-column-start: 2;
+}
+#descriptionLabel, #descriptionInput{
+    grid-row-start: 2;
+}
+#noteLabel, #noteInput{
+    grid-row-start: 3;
+}
+
+
