@@ -1,8 +1,8 @@
-let noteStorage = [];
 function addNote (){
-    let noteTitle = document.getElementById('titleInput').value;
-    let noteDescription = document.getElementById('descriptionInput').value;
-    let noteNotes = document.getElementById('noteInput').value;
+    let noteStorage = [];
+    let noteTitle = document.getElementById("titleInput").value;
+    let noteDescription = document.getElementById("descriptionInput").value;
+    let noteNotes = document.getElementById("noteInput").value;
     const noteDetails = {
         title:noteTitle,
         description:noteDescription,

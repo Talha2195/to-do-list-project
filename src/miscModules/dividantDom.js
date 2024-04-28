@@ -1,16 +1,8 @@
-class domCreator {
-    constructor(container, type, id, text) {
-        this.container = container;
-        this.type = type;
-        this.id = id;
-        this.text = text;
+function makeDom (container, type, id, text) {
+        const dividant = document.querySelector(container);
+        const content = document.createElement(type);
+        content.setAttribute('id', id);
+        content.textContent = text;
+        dividant.appendChild(content);
     }
-    makeDom () {
-        const container = document.querySelector(this.container);
-        const content = document.createElement(this.type);
-        content.setAttribute('id', this.id);
-        content.textContent = this.text;
-        container.appendChild(content);
-    }
-}
-export {domCreator};
+export {makeDom};

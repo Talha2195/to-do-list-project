@@ -1,21 +1,16 @@
-import { inputDom } from "../miscModules/typeInputDom";
-import { domCreator } from "../miscModules/dividantDom";
+import { addNote } from "../saveNote/userInputFunction";
+import { makeInputDom } from "../miscModules/typeInputDom";
+import { domCreator, makeDom } from "../miscModules/dividantDom";
 function invokeTextFieldDom () {
-    const inputPutFields = new domCreator ('#content', 'div', 'inputFieldsDiv')
-    const labelFieldOne = new inputDom ('#inputFieldsDiv', 'label', 'Title', 'titleLabel');
-    const textFieldOne = new inputDom ('#inputFieldsDiv', 'input', '', 'titleInput');
-    const labelFieldTwo = new inputDom ('#inputFieldsDiv', 'label', 'Description', 'descriptionLabel');
-    const textFieldTwo = new inputDom ('#inputFieldsDiv', 'input', '', 'descriptionInput');
-    const labelFieldThree = new inputDom ('#inputFieldsDiv', 'label', 'Notes', 'noteLabel');
-    const textFieldThree = new inputDom ('#inputFieldsDiv', 'input', '', 'noteInput');
-    const saveButton = new inputDom('#inputFieldsDiv', 'button','save', 'saveButton');
-    inputPutFields.makeDom();
-    labelFieldOne.makeInputDom();
-    textFieldOne.makeInputDom();
-    labelFieldTwo.makeInputDom();
-    textFieldTwo.makeInputDom();
-    labelFieldThree.makeInputDom();
-    textFieldThree.makeInputDom();
-    saveButton.makeInputDom();
+    const inputPutFields = makeDom('#content', 'div', 'inputFieldsDiv')
+    const labelFieldOne = makeInputDom ('#inputFieldsDiv', 'label', 'Title', 'titleLabel');
+    const textFieldOne = makeInputDom ('#inputFieldsDiv', 'input', '', 'titleInput');
+    const labelFieldTwo = makeInputDom ('#inputFieldsDiv', 'label', 'Description', 'descriptionLabel');
+    const textFieldTwo = makeInputDom ('#inputFieldsDiv', 'input', '', 'descriptionInput');
+    const labelFieldThree = makeInputDom('#inputFieldsDiv', 'label', 'Notes', 'noteLabel');
+    const textFieldThree = makeInputDom ('#inputFieldsDiv', 'input', '', 'noteInput');
+    const saveButton = makeInputDom ('#inputFieldsDiv', 'button','save', 'saveButton');
+    const buttonSaveFeature = document.getElementById('saveButton');
+    buttonSaveFeature.addEventListener('click', addNote);
 }
 export{invokeTextFieldDom};

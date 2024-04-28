@@ -24,6 +24,9 @@ body{
     height:760px;
     background-color: white;
 }
+#footer{
+    background-color: white;
+}
 #inputFieldsDiv {
     display:grid;
     grid-template-columns: 100px 200px;

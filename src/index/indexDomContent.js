@@ -1,10 +1,8 @@
-import { domCreator} from "../miscModules/dividantDom";
-function invokeDomContent (){    
-const sideBar = new domCreator('body', 'div', 'sideBar');
-sideBar.makeDom();
-const contentPage = new domCreator('body', 'div', 'content', 'Content Area');
-contentPage.makeDom();
-const topBar = new domCreator('body', 'div', 'topBar');
-topBar.makeDom();
+import {makeDom} from "../miscModules/dividantDom";
+function invokeDomContent (){  
+const sideBar = makeDom ('body', 'div', 'sideBar');
+const contentPage = makeDom ('body', 'div', 'content','Content Area');
+const topBar = makeDom ('body', 'div', 'topBar');
+const footBar = makeDom ('body', 'div', 'footer', 'footer');
 }
 export {invokeDomContent};
