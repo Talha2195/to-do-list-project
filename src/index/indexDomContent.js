@@ -1,8 +1,10 @@
 import {makeDom} from "../miscModules/dividantDom";
-function invokeDomContent (){  
-const sideBar = makeDom ('body', 'div', 'sideBar');
-const contentPage = makeDom ('body', 'div', 'content','Content Area');
-const topBar = makeDom ('body', 'div', 'topBar');
-const footBar = makeDom ('body', 'div', 'footer', 'footer');
+function invokeDomContent (){ 
+makeDom ('body', 'div', 'mainDiv');
+makeDom ('#mainDiv', 'div', 'topBar');
+makeDom('#topBar', 'div', 'topBarButtonDiv')
+makeDom ('#mainDiv', 'div', 'leftBar');
+makeDom ('#mainDiv', 'div', 'content',);
+makeDom ('#mainDiv', 'div', 'footer', 'footer');
 }
 export {invokeDomContent};

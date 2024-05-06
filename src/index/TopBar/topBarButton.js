@@ -1,7 +1,7 @@
 import {makeInputDom} from "../../miscModules/typeInputDom";
 function invokeTopBarButton() {
-    const topBarButtonOne = makeInputDom ('#topBar', 'button', 'Search', 'search');
-    const topBarButtonTwo = makeInputDom ('#topBar', 'button', 'Home', 'home');
-    const topBarButtonThree = makeInputDom ('#topBar', 'button', 'New note', 'newNote');
+    makeInputDom ('#topBarButtonDiv', 'button', 'Home', 'home');
+    makeInputDom ('#topBarButtonDiv', 'button', 'Search', 'search');
+    makeInputDom ('#topBarButtonDiv', 'button', 'New note', 'newNote');
 }
 export{invokeTopBarButton};

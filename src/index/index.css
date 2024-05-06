@@ -1,37 +1,112 @@
 body{
-    display:grid;
-    background-color: black;
-    grid-template-areas: 
-    "topbar topbar topbar"
-    "sidebar body body"
-    "sidebar body body";
+    margin: 0;
+    background-color: white;
+}
+#mainDiv {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 30px;
 }
 #topBar {
-    grid-area: topbar;
-    height: 40px;
+    grid-column: span 3;
     background-color: lightcoral;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
-#sideBar {
-    width: 300px;
-    grid-area: sidebar;
+#leftBar {
+    padding: 30px;
+    border-right: 1px solid #ddd;
     display:flex;
     flex-direction: column;
-    background-color: lightgrey;
+    background-color: #cccccc;
+    justify-content: space-around;
 }
 #content {
-    grid-area: body;
-    width: 1125px;
-    height:760px;
     background-color: white;
+    height: 780px;
+}
+#contentHeadingOne{
+    text-align: center;
 }
 #footer{
-    background-color: white;
+    background-color: blue;
+    grid-column: span 3;
+    padding: 30px;
 }
 #inputFieldsDiv {
     display:grid;
     grid-template-columns: 100px 200px;
     grid-template-rows: 15px 15px 15px;
 }
+#leftBar > button {
+  border: none;
+  outline: none;
+  position: relative;
+  cursor:pointer;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  background-color: inherit;
+  border-radius: 0;
+  --border-size:2px;
+  --accent-color: lightcoral;
+  padding-left: 28px;
+}
+#leftBar > button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    background-color: var(--accent-color);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+#leftBar > button:hover::before,
+#leftBar> button:focus::before{
+    transform: scaleX(1);
+}
+#topBar > div > button{
+    border: none;
+    outline: none;
+    position: relative;
+    cursor:pointer;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font: inherit;
+    background-color: inherit;
+    border-radius: 0;
+    --border-size:2px;
+    --accent-color: white;
+}
+#topBarButtonDiv > button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    background-color: var(--accent-color);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+#topBarButtonDiv > button:hover::before,
+#topBarButtonDiv > button:focus::before{
+    transform: scaleX(1);
+}
+#topBarButtonDiv{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 30px;
+    justify-content: space-around;
+    width: 20%;
+}
+/* #topBarButtonDiv > #content{
+
+} */
 #titleInput {
     grid-column-start: 2;
 }
