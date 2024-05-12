@@ -2,71 +2,18 @@ body{
     margin: 0;
     background-color: white;
 }
+/*///////////////////////////////////////////////////////////////////////////*/ 
 #mainDiv {
     display: grid;
     grid-template-columns: 1fr 3fr;
     column-gap: 30px;
 }
+/*///////////////////////////////////////////////////////////////////////////*/ 
 #topBar {
     grid-column: span 3;
     background-color: lightcoral;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
-}
-#leftBar {
-    padding: 30px;
-    border-right: 1px solid #ddd;
-    display:flex;
-    flex-direction: column;
-    background-color: #cccccc;
-    justify-content: space-around;
-}
-#content {
-    background-color: white;
-    height: 780px;
-}
-#contentHeadingOne{
-    text-align: center;
-}
-#footer{
-    background-color: blue;
-    grid-column: span 3;
-    padding: 30px;
-}
-#inputFieldsDiv {
-    display:grid;
-    grid-template-columns: 100px 200px;
-    grid-template-rows: 15px 15px 15px;
-}
-#leftBar > button {
-  border: none;
-  outline: none;
-  position: relative;
-  cursor:pointer;
-  margin: 0;
-  padding: 0;
-  text-align: inherit;
-  font: inherit;
-  background-color: inherit;
-  border-radius: 0;
-  --border-size:2px;
-  --accent-color: lightcoral;
-  padding-left: 28px;
-}
-#leftBar > button::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: var(--border-size);
-    background-color: var(--accent-color);
-    transform: scaleX(0);
-    transition: transform 300ms ease-in-out;
-}
-#leftBar > button:hover::before,
-#leftBar> button:focus::before{
-    transform: scaleX(1);
 }
 #topBar > div > button{
     border: none;
@@ -104,10 +51,105 @@ body{
     justify-content: space-around;
     width: 20%;
 }
-/* #topBarButtonDiv > #content{
+/*///////////////////////////////////////////////////////////////////////////*/ 
+#leftBar{
+    background-color: #cccccc;
+    padding-left: 30px;
+    padding-top: 50px;
+    border-right: 1px solid #ddd;
+    height: 760px;
+}
+#leftBarContentDiv, 
+#existingProjects{
+    display:flex;
+    flex-direction: column;
+    height: 80%;
+    padding-left: 20px;
+}
+#leftBarContentDiv > button, 
+#existingProjects > button {
+  border: none;
+  outline: none;
+  position: relative;
+  cursor:pointer;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  background-color: inherit;
+  border-radius: 0;
+  --border-size:2px;
+  --accent-color: lightcoral;
+  padding: 2%;
+}
+#leftBarContentDiv > button::before, 
+#existingProjects >  button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    background-color: var(--accent-color);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+#leftBarContentDiv > button:hover::before,
+#leftBarContentDiv > button:focus::before, 
+#existingProjects > button:hover::before, 
+#existingProjects > button:focus::before{
+    transform: scaleX(1);
+}
 
+#existingProjects > button {
+    width: 100%;
+}
+#existingProjects{
+    padding-top: 5px;
+    padding-left: 8px;
+}
+/* #nameTag {
+    padding: 10px 10px 10px 40px;
+  background: url(./accordianArrow) no-repeat 14px 50%;
+  background-size: 18px;
+  font-weight: bold;
 } */
-#titleInput {
+#existingProjects > #nameTag {
+    list-style-type: '⋁ ';
+}
+#existingProjects[open] > #nameTag{
+    list-style-type: '⋀ ';
+}
+#existingProjects[open] > #nameTag::after{
+    transform: rotate(180deg);
+}
+/*///////////////////////////////////////////////////////////////////////////*/ 
+#content {
+    background-color: white;
+    height: 780px;
+}
+#contentHeadingOne{
+    text-align: center;
+}
+/*///////////////////////////////////////////////////////////////////////////*/ 
+#footer{
+    background-color: blue;
+    grid-column: span 3;
+    padding: 30px;
+}
+/*//////////////////////////////////////////////////////////////////////////////*/
+#inputMainDiv {
+    padding-top: 100px;
+    border: 1px solid red;
+    height: 70%;
+}
+#inputSubDiv {
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+/* #titleInput {
     grid-column-start: 2;
 }
 #descriptionLabel, #descriptionInput{
@@ -115,6 +157,10 @@ body{
 }
 #noteLabel, #noteInput{
     grid-row-start: 3;
-}
+} */
+/* #saveButton {
+    height: 5%;
+    width: 100%;
+} */
 
 
