@@ -11,7 +11,7 @@ body{
 /*///////////////////////////////////////////////////////////////////////////*/ 
 #topBar {
     grid-column: span 3;
-    background-color: lightcoral;
+    background-color: #f08080;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
 }
@@ -26,8 +26,6 @@ body{
     font: inherit;
     background-color: inherit;
     border-radius: 0;
-    --border-size:2px;
-    --accent-color: white;
 }
 #topBarButtonDiv > button::before{
     content: '';
@@ -53,10 +51,8 @@ body{
 }
 /*///////////////////////////////////////////////////////////////////////////*/ 
 #leftBar{
-    background-color: #cccccc;
-    padding-left: 30px;
+    background-color: rgb(255, 255, 255);
     padding-top: 50px;
-    border-right: 1px solid #ddd;
     height: 760px;
 }
 #leftBarContentDiv, 
@@ -64,64 +60,70 @@ body{
     display:flex;
     flex-direction: column;
     height: 80%;
-    padding-left: 20px;
 }
 #leftBarContentDiv > button, 
 #existingProjects > button {
-  border: none;
-  outline: none;
-  position: relative;
-  cursor:pointer;
-  margin: 0;
-  padding: 0;
-  text-align: inherit;
-  font: inherit;
-  background-color: inherit;
-  border-radius: 0;
-  --border-size:2px;
-  --accent-color: lightcoral;
-  padding: 2%;
+    background-color: white;
+    padding:20px;
+    color:#222;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    --accent-color: #F0F0F0;
+    z-index: 1;
+    display: flex;
 }
 #leftBarContentDiv > button::before, 
-#existingProjects >  button::before{
+#existingProjects > button::before{
     content: '';
     position: absolute;
+    top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
-    height: var(--border-size);
-    background-color: var(--accent-color);
+    right: 0;
+    z-index: -1;
     transform: scaleX(0);
-    transition: transform 300ms ease-in-out;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
-#leftBarContentDiv > button:hover::before,
-#leftBarContentDiv > button:focus::before, 
-#existingProjects > button:hover::before, 
-#existingProjects > button:focus::before{
+#leftBarContentDiv > button:focus, 
+#existingProjects > button:focus{
+    background-color: #f08080;
+    border: solid black;
+}
+#leftBarContentDiv > button:hover, 
+#existingProjects > button:hover{
     transform: scaleX(1);
+    background-color: var(--accent-color);
 }
-
 #existingProjects > button {
-    width: 100%;
+    width: 90%;
 }
 #existingProjects{
     padding-top: 5px;
-    padding-left: 8px;
 }
-/* #nameTag {
-    padding: 10px 10px 10px 40px;
-  background: url(./accordianArrow) no-repeat 14px 50%;
-  background-size: 18px;
-  font-weight: bold;
-} */
-#existingProjects > #nameTag {
-    list-style-type: '⋁ ';
+#nameTag {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
-#existingProjects[open] > #nameTag{
-    list-style-type: '⋀ ';
+#nameTag::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url('../images/icon.png') no-repeat;
+    background-size: cover;
+    margin-right: 0.5em;
+    transition: 0.2s;
 }
-#existingProjects[open] > #nameTag::after{
+#existingProjects[open] > #nameTag::before{
     transform: rotate(180deg);
+  }
+details #nameTag::-webkit--#existingProjects-marker {
+    display: none;
 }
 /*///////////////////////////////////////////////////////////////////////////*/ 
 #content {
@@ -139,7 +141,9 @@ body{
 }
 /*//////////////////////////////////////////////////////////////////////////////*/
 #inputMainDiv {
-    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
     border: 1px solid red;
     height: 70%;
 }
@@ -147,20 +151,10 @@ body{
     display:flex;
     flex-direction: column;
     border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px 5px 0 0;
 }
 
-/* #titleInput {
-    grid-column-start: 2;
-}
-#descriptionLabel, #descriptionInput{
-    grid-row-start: 2;
-}
-#noteLabel, #noteInput{
-    grid-row-start: 3;
-} */
-/* #saveButton {
-    height: 5%;
-    width: 100%;
-} */
 
 

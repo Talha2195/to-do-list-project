@@ -16,7 +16,7 @@
   \*******************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body{\n    margin: 0;\n    background-color: white;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#mainDiv {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    column-gap: 30px;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#topBar {\n    grid-column: span 3;\n    background-color: lightcoral;\n    border-bottom: 1px solid #ddd;\n    padding-bottom: 10px;\n}\n#topBar > div > button{\n    border: none;\n    outline: none;\n    position: relative;\n    cursor:pointer;\n    margin: 0;\n    padding: 0;\n    text-align: inherit;\n    font: inherit;\n    background-color: inherit;\n    border-radius: 0;\n    --border-size:2px;\n    --accent-color: white;\n}\n#topBarButtonDiv > button::before{\n    content: '';\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    height: var(--border-size);\n    background-color: var(--accent-color);\n    transform: scaleX(0);\n    transition: transform 300ms ease-in-out;\n}\n#topBarButtonDiv > button:hover::before,\n#topBarButtonDiv > button:focus::before{\n    transform: scaleX(1);\n}\n#topBarButtonDiv{\n    display: flex;\n    padding-top: 10px;\n    padding-left: 30px;\n    justify-content: space-around;\n    width: 20%;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#leftBar{\n    background-color: #cccccc;\n    padding-left: 30px;\n    padding-top: 50px;\n    border-right: 1px solid #ddd;\n    height: 760px;\n}\n#leftBarContentDiv, \n#existingProjects{\n    display:flex;\n    flex-direction: column;\n    height: 80%;\n    padding-left: 20px;\n}\n#leftBarContentDiv > button, \n#existingProjects > button {\n  border: none;\n  outline: none;\n  position: relative;\n  cursor:pointer;\n  margin: 0;\n  padding: 0;\n  text-align: inherit;\n  font: inherit;\n  background-color: inherit;\n  border-radius: 0;\n  --border-size:2px;\n  --accent-color: lightcoral;\n  padding: 2%;\n}\n#leftBarContentDiv > button::before, \n#existingProjects >  button::before{\n    content: '';\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    height: var(--border-size);\n    background-color: var(--accent-color);\n    transform: scaleX(0);\n    transition: transform 300ms ease-in-out;\n}\n#leftBarContentDiv > button:hover::before,\n#leftBarContentDiv > button:focus::before, \n#existingProjects > button:hover::before, \n#existingProjects > button:focus::before{\n    transform: scaleX(1);\n}\n\n#existingProjects > button {\n    width: 100%;\n}\n#existingProjects{\n    padding-top: 5px;\n    padding-left: 8px;\n}\n/* #nameTag {\n    padding: 10px 10px 10px 40px;\n  background: url(./accordianArrow) no-repeat 14px 50%;\n  background-size: 18px;\n  font-weight: bold;\n} */\n#existingProjects > #nameTag {\n    list-style-type: '⋁ ';\n}\n#existingProjects[open] > #nameTag{\n    list-style-type: '⋀ ';\n}\n#existingProjects[open] > #nameTag::after{\n    transform: rotate(180deg);\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#content {\n    background-color: white;\n    height: 780px;\n}\n#contentHeadingOne{\n    text-align: center;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#footer{\n    background-color: blue;\n    grid-column: span 3;\n    padding: 30px;\n}\n/*//////////////////////////////////////////////////////////////////////////////*/\n#inputMainDiv {\n    padding-top: 100px;\n    border: 1px solid red;\n    height: 70%;\n}\n#inputSubDiv {\n    display:flex;\n    flex-direction: column;\n    border: 1px solid black;\n}\n\n/* #titleInput {\n    grid-column-start: 2;\n}\n#descriptionLabel, #descriptionInput{\n    grid-row-start: 2;\n}\n#noteLabel, #noteInput{\n    grid-row-start: 3;\n} */\n/* #saveButton {\n    height: 5%;\n    width: 100%;\n} */\n\n\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../images/icon.png */ \"./src/images/icon.png\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body{\n    margin: 0;\n    background-color: white;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#mainDiv {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    column-gap: 30px;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#topBar {\n    grid-column: span 3;\n    background-color: #f08080;\n    border-bottom: 1px solid #ddd;\n    padding-bottom: 10px;\n}\n#topBar > div > button{\n    border: none;\n    outline: none;\n    position: relative;\n    cursor:pointer;\n    margin: 0;\n    padding: 0;\n    text-align: inherit;\n    font: inherit;\n    background-color: inherit;\n    border-radius: 0;\n}\n#topBarButtonDiv > button::before{\n    content: '';\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    height: var(--border-size);\n    background-color: var(--accent-color);\n    transform: scaleX(0);\n    transition: transform 300ms ease-in-out;\n}\n#topBarButtonDiv > button:hover::before,\n#topBarButtonDiv > button:focus::before{\n    transform: scaleX(1);\n}\n#topBarButtonDiv{\n    display: flex;\n    padding-top: 10px;\n    padding-left: 30px;\n    justify-content: space-around;\n    width: 20%;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#leftBar{\n    background-color: rgb(255, 255, 255);\n    padding-top: 50px;\n    height: 760px;\n}\n#leftBarContentDiv, \n#existingProjects{\n    display:flex;\n    flex-direction: column;\n    height: 80%;\n}\n#leftBarContentDiv > button, \n#existingProjects > button {\n    background-color: white;\n    padding:20px;\n    color:#222;\n    border: none;\n    outline: none;\n    position: relative;\n    cursor: pointer;\n    border-top-right-radius: 25px;\n    border-bottom-right-radius: 25px;\n    --accent-color: #F0F0F0;\n    z-index: 1;\n    display: flex;\n}\n#leftBarContentDiv > button::before, \n#existingProjects > button::before{\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n    z-index: -1;\n    transform: scaleX(0);\n    border-top-right-radius: 25px;\n    border-bottom-right-radius: 25px;\n}\n#leftBarContentDiv > button:focus, \n#existingProjects > button:focus{\n    background-color: #f08080;\n    border: solid black;\n}\n#leftBarContentDiv > button:hover, \n#existingProjects > button:hover{\n    transform: scaleX(1);\n    background-color: var(--accent-color);\n}\n#existingProjects > button {\n    width: 90%;\n}\n#existingProjects{\n    padding-top: 5px;\n}\n#nameTag {\n    list-style: none;\n    display: flex;\n    align-items: center;\n}\n#nameTag::before {\n    content: '';\n    width: 18px;\n    height: 18px;\n    background: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) no-repeat;\n    background-size: cover;\n    margin-right: 0.5em;\n    transition: 0.2s;\n}\n#existingProjects[open] > #nameTag::before{\n    transform: rotate(180deg);\n  }\ndetails #nameTag::-webkit--#existingProjects-marker {\n    display: none;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#content {\n    background-color: white;\n    height: 780px;\n}\n#contentHeadingOne{\n    text-align: center;\n}\n/*///////////////////////////////////////////////////////////////////////////*/ \n#footer{\n    background-color: blue;\n    grid-column: span 3;\n    padding: 30px;\n}\n/*//////////////////////////////////////////////////////////////////////////////*/\n#inputMainDiv {\n    display: flex;\n    justify-content: center;\n    padding-top: 50px;\n    border: 1px solid red;\n    height: 70%;\n}\n#inputSubDiv {\n    display:flex;\n    flex-direction: column;\n    border: 1px solid black;\n    width: 50%;\n    height: 50%;\n    border-radius: 5px 5px 0 0;\n}\n\n\n\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/index.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  // return the list of modules as css string\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n      content += cssWithMappingToString(item);\n      if (needLayer) {\n        content += \"}\";\n      }\n      if (item[2]) {\n        content += \"}\";\n      }\n      if (item[4]) {\n        content += \"}\";\n      }\n      return content;\n    }).join(\"\");\n  };\n\n  // import a list of modules into the list\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n    var alreadyImportedModules = {};\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n      list.push(item);\n    }\n  };\n  return list;\n};\n\n//# sourceURL=webpack://to-do-list-project/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n  if (!url) {\n    return url;\n  }\n  url = String(url.__esModule ? url.default : url);\n\n  // If url is already wrapped in quotes, remove them\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n  if (options.hash) {\n    url += options.hash;\n  }\n\n  // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n  return url;\n};\n\n//# sourceURL=webpack://to-do-list-project/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -116,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeTopBarButton: () => (/* binding */ invokeTopBarButton)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n\nfunction invokeTopBarButton() {\n    (0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#topBarButtonDiv', 'button', 'Home', 'home');\n    (0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#topBarButtonDiv', 'button', 'Search', 'search');\n    (0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#topBarButtonDiv', 'button', 'New note', 'newNote');\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/TopBar/topBarButton.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeTopBarButton: () => (/* binding */ invokeTopBarButton)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n\nfunction invokeTopBarButton() {\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#topBarButtonDiv', 'button', 'Home', 'home');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#topBarButtonDiv', 'button', 'Search', 'search');\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/index/TopBar/topBarButton.js?");
 
 /***/ }),
 
@@ -170,6 +180,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/miscModules/imagesDom.js":
+/*!**************************************!*\
+  !*** ./src/miscModules/imagesDom.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createImage: () => (/* binding */ createImage)\n/* harmony export */ });\nfunction createImage(body, element, imageName, id, altText){\n    const container = document.querySelector(body);\n        const content = document.createElement(element);\n        content.setAttribute('src', imageName);\n        content.setAttribute('id', id);\n        content.setAttribute('alt', altText);\n        container.appendChild(content);\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/imagesDom.js?");
+
+/***/ }),
+
 /***/ "./src/miscModules/typeInputDom.js":
 /*!*****************************************!*\
   !*** ./src/miscModules/typeInputDom.js ***!
@@ -216,7 +236,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeSideBarButton: () => (/* binding */ invokeSideBarButton)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n\nfunction invokeSideBarButton () {\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#leftBarContentDiv', 'button', 'Today', 'today');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#leftBarContentDiv', 'button', 'Upcoming', 'upcoming');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#leftBarContentDiv', 'button', 'New Project', 'newProject');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#leftBarContentDiv', 'details', '', 'existingProjects');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'summary', 'Projects', 'nameTag');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonOne');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonTwo');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonThree');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonFour');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonFive');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonSix');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonSeven');\n}\n\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonContent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeSideBarButton: () => (/* binding */ invokeSideBarButton)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n/* harmony import */ var _miscModules_imagesDom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../miscModules/imagesDom */ \"./src/miscModules/imagesDom.js\");\n\n\nfunction invokeSideBarButton () {\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#leftBarContentDiv', 'button', 'Notes', 'newNote');\n(0,_miscModules_imagesDom__WEBPACK_IMPORTED_MODULE_1__.createImage)('#newNote', 'img', 'plusIcon.png', 'plusIcon', 'plus icon');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#leftBarContentDiv', 'button', 'Upcoming', 'upcoming');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#leftBarContentDiv', 'button', 'New Project', 'newProject');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#leftBarContentDiv', 'details', '', 'existingProjects');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'summary', 'Projects', 'nameTag');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonOne');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonTwo');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonThree');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonFour');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonFive');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonSix');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#existingProjects', 'button', 'genericButton', 'genericButtonSeven');\n}\n\n\n\n//# sourceURL=webpack://to-do-list-project/./src/sideBar/sideBarButtonContent.js?");
+
+/***/ }),
+
+/***/ "./src/images/icon.png":
+/*!*****************************!*\
+  !*** ./src/images/icon.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"063082c102295fbaa58e.png\";\n\n//# sourceURL=webpack://to-do-list-project/./src/images/icon.png?");
 
 /***/ })
 
@@ -246,6 +276,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -271,6 +304,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -285,6 +330,55 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
