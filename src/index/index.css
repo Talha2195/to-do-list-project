@@ -94,8 +94,8 @@ body{
     background-color: #f08080;
     border: solid black;
 }
-#leftBarContentDiv > button:hover, 
-#existingProjects > button:hover{
+#leftBarContentDiv > button:hover:not(:focus), 
+#existingProjects > button:hover:not(:focus){
     transform: scaleX(1);
     background-color: var(--accent-color);
 }
