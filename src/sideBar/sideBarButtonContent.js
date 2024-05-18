@@ -2,8 +2,8 @@ import { makeInputDom } from "../miscModules/typeInputDom";
 import { createImage } from "../miscModules/imagesDom";
 function invokeSideBarButton () {
 makeInputDom ('#leftBarContentDiv', 'button', 'Notes', 'newNote');
-// createImage('#newNote', 'img', 'plusIcon.png', 'plusIcon', 'plus icon');
 makeInputDom ('#leftBarContentDiv', 'button', 'Upcoming', 'upcoming');
+createImage('#newNote', 'img', 'plusicon', 'plus icon');
 makeInputDom ('#leftBarContentDiv', 'button', 'New Project', 'newProject');
 makeInputDom ('#leftBarContentDiv', 'details', '', 'existingProjects');
 makeInputDom ('#existingProjects', 'summary', 'Projects', 'nameTag');
