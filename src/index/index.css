@@ -61,8 +61,7 @@ body{
     flex-direction: column;
     height: 80%;
 }
-#leftBarContentDiv > button, 
-#existingProjects > button {
+#leftBarContentDiv > button{
     background-color: white;
     padding:20px;
     color:#222;
@@ -76,8 +75,7 @@ body{
     z-index: 1;
     display: flex;
 }
-#leftBarContentDiv > button::before, 
-#existingProjects > button::before{
+#leftBarContentDiv > button::before{
     content: '';
     position: absolute;
     top: 0;
@@ -89,18 +87,13 @@ body{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-#leftBarContentDiv > button:focus, 
-#existingProjects > button:focus{
+#leftBarContentDiv > button:focus{
     background-color: #f08080;
     border: solid black;
 }
-#leftBarContentDiv > button:hover:not(:focus), 
-#existingProjects > button:hover:not(:focus){
+#leftBarContentDiv > button:hover:not(:focus){
     transform: scaleX(1);
     background-color: var(--accent-color);
-}
-#existingProjects > button {
-    width: 90%;
 }
 #existingProjects{
     padding-top: 5px;
@@ -110,20 +103,112 @@ body{
     display: flex;
     align-items: center;
 }
-#nameTag::before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    background: url('../images/icon.png') no-repeat;
-    background-size: cover;
-    margin-right: 0.5em;
-    transition: 0.2s;
-}
 #existingProjects[open] > #nameTag::before{
     transform: rotate(180deg);
   }
 details #nameTag::-webkit--#existingProjects-marker {
     display: none;
+}
+#plusicon, #upcomingIcon{
+    mix-blend-mode: multiply;
+}
+#plusicon{
+    margin-right: 10px;
+    margin-left: 16px;
+    height: 14px;
+    width: 14px;
+}
+#newNote {
+    height: 15%;
+    width: 100%;
+    align-items: center;
+}
+#upcoming {
+    align-items: center;
+}
+#upcomingIcon {
+    height: 40px;
+    width: 50px;
+} 
+#newNote, #upcoming{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+#nameTag {
+    background-color: white;
+    padding:20px;
+    color:#222;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    --accent-color: #F0F0F0;
+    z-index: 1;
+    display: flex;
+    height: 8%;
+    width: 88%;
+}
+#nameTag::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url('../images/icon.png') no-repeat;
+    mix-blend-mode: multiply;
+    background-size: cover;
+    margin-right: 0.5em;
+    transition: 0.2s;
+    margin-left: 15px;
+}
+#nameTag:focus {
+    background-color: #f08080;
+    border: solid black;
+}
+#nameTag:hover:not(:focus){
+    transform: scaleX(1);
+    background-color: var(--accent-color);
+}
+#existingProjects > button {
+    background-color: white;
+    border:none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    --border-size: 2px;
+    --underline-hover-color: 	#696969;
+    --underline-focus-color:  #f08080;
+}
+#existingProjects > button:before {
+    content: '';
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height: var(--border-size);
+    background-color: var(--underline-hover-color);
+    transform: scaleX(0);
+    transition: transform ease-in-out 500ms;
+    transform-origin: left;
+} 
+#existingProjects > button:after{
+    content: '';
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height: var(--border-size);
+    background-color: var(--underline-focus-color);
+    transform: scaleX(0);
+}
+#existingProjects > button:focus:after{
+    transform: scaleX(1);
+}
+#existingProjects > button:hover:before{
+    transform: scaleX(1);
 }
 /*///////////////////////////////////////////////////////////////////////////*/ 
 #content {
@@ -155,6 +240,7 @@ details #nameTag::-webkit--#existingProjects-marker {
     height: 50%;
     border-radius: 5px 5px 0 0;
 }
+/*//////////////////////////////////////////////////////////////////////////////*/
 
 
 

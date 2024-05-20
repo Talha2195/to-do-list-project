@@ -1,18 +1,15 @@
 import { makeInputDom } from "../miscModules/typeInputDom";
 import { createImage } from "../miscModules/imagesDom";
 function invokeSideBarButton () {
-makeInputDom ('#leftBarContentDiv', 'button', 'Notes', 'newNote');
-makeInputDom ('#leftBarContentDiv', 'button', 'Upcoming', 'upcoming');
+makeInputDom ('#leftBarContentDiv', 'button', 'New Note', 'newNote');
 createImage('#newNote', 'img', 'plusicon', 'plus icon');
-makeInputDom ('#leftBarContentDiv', 'button', 'New Project', 'newProject');
+makeInputDom ('#leftBarContentDiv', 'button', 'Upcoming', 'upcoming');
+createImage ('#upcoming', 'img', 'upcomingIcon', 'calender icon');
 makeInputDom ('#leftBarContentDiv', 'details', '', 'existingProjects');
 makeInputDom ('#existingProjects', 'summary', 'Projects', 'nameTag');
 makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonOne');
 makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonTwo');
 makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonThree');
 makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonFour');
-makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonFive');
-makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonSix');
-makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonSeven');
 }
 export{invokeSideBarButton};
