@@ -14,6 +14,7 @@ body{
     background-color: #f08080;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
+    border-bottom: 1px solid black;
 }
 #topBar > div > button{
     border: none;
@@ -26,28 +27,55 @@ body{
     font: inherit;
     background-color: inherit;
     border-radius: 0;
-}
-#topBarButtonDiv > button::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: var(--border-size);
-    background-color: var(--accent-color);
-    transform: scaleX(0);
-    transition: transform 300ms ease-in-out;
-}
-#topBarButtonDiv > button:hover::before,
-#topBarButtonDiv > button:focus::before{
-    transform: scaleX(1);
+    height: 60%;
 }
 #topBarButtonDiv{
     display: flex;
     padding-top: 10px;
-    padding-left: 30px;
     justify-content: space-around;
-    width: 20%;
+    width: 50%;
+    height: 90%;
+}
+#searchBar {
+    --padding: 14px;
+    padding: var(--padding);
+    align-items: center;
+    display:flex;
+    width: max-content;
+    height: 10px;
+    width: 500px;
+    background-color: #de7474;
+    border-radius: 6px;
+    transition: background 0.25s;
+}
+#searchBar:focus-within{
+    background: #f1f1f1
+}
+#searchInput {
+    font-size: 16px;
+    font: 'Lexend', sans-serif;
+    width: 500px;
+    height: 200px;
+    color: #333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+}
+#searchInput::placeholder {
+    color: rgba (0, 0, 0, 0.25);
+}
+#searchIcon {
+    mix-blend-mode: multiply;
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+#homeIcon {
+    mix-blend-mode: multiply;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
 }
 /*///////////////////////////////////////////////////////////////////////////*/ 
 #leftBar{
