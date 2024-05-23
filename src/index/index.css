@@ -14,7 +14,7 @@ body{
     background-color: #f08080;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 #topBar > div > button{
     border: none;
@@ -67,14 +67,15 @@ body{
 }
 #searchIcon {
     mix-blend-mode: multiply;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     float: left;
 }
 #homeIcon {
+    padding-top: 2px;
     mix-blend-mode: multiply;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     margin-left: 10px;
 }
 /*///////////////////////////////////////////////////////////////////////////*/ 
@@ -143,8 +144,8 @@ details #nameTag::-webkit--#existingProjects-marker {
 #plusicon{
     margin-right: 10px;
     margin-left: 16px;
-    height: 14px;
-    width: 14px;
+    height: 30px;
+    width: 30px;
 }
 #newNote {
     height: 15%;
@@ -155,8 +156,10 @@ details #nameTag::-webkit--#existingProjects-marker {
     align-items: center;
 }
 #upcomingIcon {
-    height: 40px;
-    width: 50px;
+    padding-left: 15px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 } 
 #newNote, #upcoming{
     flex-direction: row-reverse;
@@ -180,9 +183,9 @@ details #nameTag::-webkit--#existingProjects-marker {
 }
 #nameTag::before {
     content: '';
-    width: 18px;
-    height: 18px;
-    background: url('../images/plusIcon.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    background: url('../images/arrowIcon.png') no-repeat;
     mix-blend-mode: multiply;
     background-size: cover;
     margin-right: 0.5em;
@@ -257,16 +260,48 @@ details #nameTag::-webkit--#existingProjects-marker {
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    border: 1px solid red;
     height: 70%;
 }
 #inputSubDiv {
     display:flex;
     flex-direction: column;
+    width: 70%;
+    height: 70%;
     border: 1px solid black;
-    width: 50%;
-    height: 50%;
-    border-radius: 5px 5px 0 0;
+    border-radius: 20px;
+}
+#inputSubDiv > textarea {
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    resize: none;
+}
+#titleInput {
+    height: 10%;
+
+}
+#descriptionInput {
+    height: 10%;
+}
+#noteInput {
+    height: 60%;
+}
+#saveButton{
+    background: none;
+    outline: none;
+    border: none;
+    width: 10%;
+    height: 10%;
+    margin-left: 85%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#saveButton:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ddd;
 }
 /*//////////////////////////////////////////////////////////////////////////////*/
 
