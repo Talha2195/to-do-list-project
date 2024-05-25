@@ -47,6 +47,7 @@ body{
     background-color: #de7474;
     border-radius: 6px;
     transition: background 0.25s;
+    border: 2px solid black;
 }
 #searchBar:focus-within{
     background: #f1f1f1
@@ -157,7 +158,7 @@ details #nameTag::-webkit--#existingProjects-marker {
 }
 #upcomingIcon {
     padding-left: 15px;
-    height: 30px;
+    height: 40px;
     width: 30px;
     margin-right: 10px;
 } 
@@ -210,7 +211,7 @@ details #nameTag::-webkit--#existingProjects-marker {
     height: 15%;
     align-items: center;
     --border-size: 2px;
-    --underline-hover-color: 	#696969;
+    --underline-hover-color: black;
     --underline-focus-color:  #f08080;
 }
 #existingProjects > button:before {
@@ -259,7 +260,7 @@ details #nameTag::-webkit--#existingProjects-marker {
 #inputMainDiv {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 5%;
     height: 70%;
 }
 #inputSubDiv {
@@ -267,7 +268,7 @@ details #nameTag::-webkit--#existingProjects-marker {
     flex-direction: column;
     width: 70%;
     height: 70%;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 20px;
 }
 #inputSubDiv > textarea {
@@ -288,20 +289,36 @@ details #nameTag::-webkit--#existingProjects-marker {
 #noteInput {
     height: 60%;
 }
+#bottomNoteDiv {
+    height: 20%;
+    width: 80%;
+    align-self: center;
+}
 #saveButton{
     background: none;
     outline: none;
     border: none;
-    width: 10%;
-    height: 10%;
-    margin-left: 85%;
-    margin-bottom: 5px;
+    height: 80%;
+    width: 20%;
     font-size: 16px;
+    float:right;
 }
 #saveButton:hover{
     border: 1px solid black;
     border-radius: 5px;
     background-color: #ddd;
+}
+#dateInput {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    height: 80%;
+}
+#dueDate {
+    padding-right: 5px;
+}
+#dueDate:focus {
+    background-color: black;
 }
 /*//////////////////////////////////////////////////////////////////////////////*/
 

@@ -3,10 +3,10 @@ import { createImage } from "../miscModules/imagesDom";
 function invokeSideBarButton () {
 makeInputDom ('#leftBarContentDiv', 'button', 'New Note', 'newNote');
 createImage('#newNote', 'img', 'plusicon', 'plus icon');
-makeInputDom ('#leftBarContentDiv', 'button', 'Upcoming', 'upcoming');
+makeInputDom ('#leftBarContentDiv', 'button', 'All Projects', 'upcoming');
 createImage ('#upcoming', 'img', 'upcomingIcon', 'calender icon');
 makeInputDom ('#leftBarContentDiv', 'details', '', 'existingProjects');
-makeInputDom ('#existingProjects', 'summary', 'Projects', 'nameTag');
+makeInputDom ('#existingProjects', 'summary', 'Upcoming Projects', 'nameTag');
 makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonOne');
 makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonTwo');
 makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonThree');
