@@ -1,4 +1,4 @@
-import { addNote } from "../saveNote/userInputFunction";
+import { pushDetails } from "../saveNote/pushDetails";
 import { makeInputDom } from "../miscModules/typeInputDom";
 import { makeDom } from "../miscModules/dividantDom";
 function invokeTextFieldDom () {
@@ -11,7 +11,7 @@ makeInputDom ('#inputSubDiv', 'div', ' ', 'bottomNoteDiv', '', '');
 makeInputDom ('#bottomNoteDiv', 'label','Due Date:', 'dueDate', '', '' );
 makeInputDom ('#bottomNoteDiv', 'input', '', 'dateInput', 'date', '');
 makeInputDom ('#bottomNoteDiv', 'button','Save', 'saveButton');
-    const buttonSaveFeature = document.getElementById('saveButton');
-    buttonSaveFeature.addEventListener('click', addNote);
+const buttonSaveFeature = document.getElementById('saveButton');
+buttonSaveFeature.addEventListener('click', pushDetails); 
 }
 export{invokeTextFieldDom};

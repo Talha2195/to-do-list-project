@@ -7,6 +7,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr;
     column-gap: 30px;
+    height: 100%;
 }
 /*///////////////////////////////////////////////////////////////////////////*/ 
 #topBar {
@@ -252,7 +253,6 @@ details #nameTag::-webkit--#existingProjects-marker {
 }
 /*///////////////////////////////////////////////////////////////////////////*/ 
 #footer{
-    background-color: blue;
     grid-column: span 3;
     padding: 30px;
 }
@@ -262,6 +262,7 @@ details #nameTag::-webkit--#existingProjects-marker {
     justify-content: center;
     padding-top: 5%;
     height: 70%;
+    flex-direction: column;
 }
 #inputSubDiv {
     display:flex;
@@ -270,6 +271,8 @@ details #nameTag::-webkit--#existingProjects-marker {
     height: 70%;
     border: 2px solid black;
     border-radius: 20px;
+    align-self: center;
+    margin-bottom: 14%;
 }
 #inputSubDiv > textarea {
     padding: 20px;
@@ -281,7 +284,9 @@ details #nameTag::-webkit--#existingProjects-marker {
 }
 #titleInput {
     height: 10%;
-
+}
+#titleInput:invalid {
+    background-color: black;
 }
 #descriptionInput {
     height: 10%;
@@ -308,6 +313,9 @@ details #nameTag::-webkit--#existingProjects-marker {
     border-radius: 5px;
     background-color: #ddd;
 }
+#saveButton:active{
+    background-color: #909090;
+}
 #dateInput {
     border: 1px solid black;
     border-radius: 5px;
@@ -317,10 +325,13 @@ details #nameTag::-webkit--#existingProjects-marker {
 #dueDate {
     padding-right: 5px;
 }
-#dueDate:focus {
-    background-color: black;
+#errorMessage {
+    font-size: 20px;
+    align-self: center;
+    border: 1px solid black;
+    height:5%;
+    width: 26%;
+    border-radius: 5px;
+    background-color: #f08080;
 }
 /*//////////////////////////////////////////////////////////////////////////////*/
-
-
-
