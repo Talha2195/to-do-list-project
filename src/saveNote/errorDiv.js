@@ -1,5 +1,4 @@
-import { makeInputDom } from "../miscModules/typeInputDom";
 function errorDiv () {
-    makeInputDom ('#inputMainDiv', 'div', 'Can not save note without a title!', 'errorMessage', '', '' );
+document.getElementById('#errorMessage').style.display = 'none';
 }
 export {errorDiv};

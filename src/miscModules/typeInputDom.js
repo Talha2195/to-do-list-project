@@ -1,4 +1,4 @@
-function makeInputDom (body, element, text, id, type, placeholder, required){
+function makeInputDom (body, element, text, id, type, placeholder){
         const container = document.querySelector(body)
         const content = document.createElement(element);
         content.textContent = text;

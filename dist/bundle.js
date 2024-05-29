@@ -220,43 +220,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/miscModules/localStoragePush.js":
-/*!*********************************************!*\
-  !*** ./src/miscModules/localStoragePush.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   pushNote: () => (/* binding */ pushNote)\n/* harmony export */ });\n/* harmony import */ var _stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stringify */ \"./src/miscModules/stringify.js\");\n\nfunction pushNote(newNote) {\n    const noteList = (0,_stringify__WEBPACK_IMPORTED_MODULE_0__.straingified)(newNote);\n    localStorage.setItem('notes', noteList);\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/localStoragePush.js?");
-
-/***/ }),
-
-/***/ "./src/miscModules/parse.js":
-/*!**********************************!*\
-  !*** ./src/miscModules/parse.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   parsified: () => (/* binding */ parsified)\n/* harmony export */ });\nfunction parsified(object) {\n    const parsifiedObject = JSON.parse(object);\n    return parsifiedObject;\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/parse.js?");
-
-/***/ }),
-
-/***/ "./src/miscModules/stringify.js":
-/*!**************************************!*\
-  !*** ./src/miscModules/stringify.js ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   straingified: () => (/* binding */ straingified)\n/* harmony export */ });\nfunction straingified(object) {\n    const straingifiedObject = JSON.stringify(object);\n    return straingifiedObject;\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/stringify.js?");
-
-/***/ }),
-
 /***/ "./src/miscModules/typeInputDom.js":
 /*!*****************************************!*\
   !*** ./src/miscModules/typeInputDom.js ***!
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   makeInputDom: () => (/* binding */ makeInputDom)\n/* harmony export */ });\nfunction makeInputDom (body, element, text, id, type, placeholder, required){\n        const container = document.querySelector(body)\n        const content = document.createElement(element);\n        content.textContent = text;\n        content.setAttribute('id', id);\n        content.setAttribute('type', type);\n        content.setAttribute('placeholder', placeholder);\n        container.appendChild(content);\n    }\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/typeInputDom.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   makeInputDom: () => (/* binding */ makeInputDom)\n/* harmony export */ });\nfunction makeInputDom (body, element, text, id, type, placeholder){\n        const container = document.querySelector(body)\n        const content = document.createElement(element);\n        content.textContent = text;\n        content.setAttribute('id', id);\n        content.setAttribute('type', type);\n        content.setAttribute('placeholder', placeholder);\n        container.appendChild(content);\n    }\n\n\n//# sourceURL=webpack://to-do-list-project/./src/miscModules/typeInputDom.js?");
 
 /***/ }),
 
@@ -276,7 +246,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeTextFieldDom: () => (/* binding */ invokeTextFieldDom)\n/* harmony export */ });\n/* harmony import */ var _saveNote_pushDetails__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../saveNote/pushDetails */ \"./src/saveNote/pushDetails.js\");\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n/* harmony import */ var _miscModules_dividantDom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../miscModules/dividantDom */ \"./src/miscModules/dividantDom.js\");\n\n\n\nfunction invokeTextFieldDom () {\n(0,_miscModules_dividantDom__WEBPACK_IMPORTED_MODULE_2__.makeDom) ('#content', 'div', 'inputMainDiv')\n;(0,_miscModules_dividantDom__WEBPACK_IMPORTED_MODULE_2__.makeDom) ('#inputMainDiv', 'div', 'inputSubDiv')\n;(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#inputSubDiv', 'textarea', '', 'titleInput', '', 'Tile');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#inputSubDiv', 'textarea', '', 'descriptionInput', '', 'Description');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#inputSubDiv', 'textarea', '', 'noteInput', '', 'Note...');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#inputSubDiv', 'div', ' ', 'bottomNoteDiv', '', '');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#bottomNoteDiv', 'label','Due Date:', 'dueDate', '', '' );\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#bottomNoteDiv', 'input', '', 'dateInput', 'date', '');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#bottomNoteDiv', 'button','Save', 'saveButton');\nconst buttonSaveFeature = document.getElementById('saveButton');\nbuttonSaveFeature.addEventListener('click', _saveNote_pushDetails__WEBPACK_IMPORTED_MODULE_0__.pushDetails); \n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/notePage/notePageDom.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   invokeTextFieldDom: () => (/* binding */ invokeTextFieldDom)\n/* harmony export */ });\n/* harmony import */ var _saveNote_pushDetails__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../saveNote/pushDetails */ \"./src/saveNote/pushDetails.js\");\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n/* harmony import */ var _miscModules_dividantDom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../miscModules/dividantDom */ \"./src/miscModules/dividantDom.js\");\n\n\n\nfunction invokeTextFieldDom () {\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom)('#content', 'div', '', 'inputMainDiv')\n;(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom)('#inputMainDiv', 'div', '', 'inputSubDiv')\n;(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#inputSubDiv', 'textarea', '', 'titleInput', '', 'Tile')\n;(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#inputSubDiv', 'textarea', '', 'descriptionInput', '', 'Description');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#inputSubDiv', 'textarea', '', 'noteInput', '', 'Note...');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#inputSubDiv', 'div', ' ', 'bottomNoteDiv', '', '');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#bottomNoteDiv', 'label','Due Date:', 'dueDate', '', '' );\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#bottomNoteDiv', 'input', '', 'dateInput', 'date', '');\n(0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_1__.makeInputDom) ('#bottomNoteDiv', 'button','Save', 'saveButton');\nconst buttonSaveFeature = document.getElementById('saveButton');\nbuttonSaveFeature.addEventListener('click', _saveNote_pushDetails__WEBPACK_IMPORTED_MODULE_0__.pushDetails); \n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/notePage/notePageDom.js?");
 
 /***/ }),
 
@@ -286,7 +256,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   errorDiv: () => (/* binding */ errorDiv)\n/* harmony export */ });\n/* harmony import */ var _miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../miscModules/typeInputDom */ \"./src/miscModules/typeInputDom.js\");\n\nfunction errorDiv () {\n    (0,_miscModules_typeInputDom__WEBPACK_IMPORTED_MODULE_0__.makeInputDom) ('#inputMainDiv', 'div', 'Can not save note without a title!', 'errorMessage', '', '' );\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/saveNote/errorDiv.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   errorDiv: () => (/* binding */ errorDiv)\n/* harmony export */ });\nfunction errorDiv () {\ndocument.getElementById('#errorMessage').style.display = 'none';\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/saveNote/errorDiv.js?");
+
+/***/ }),
+
+/***/ "./src/saveNote/errorRemove.js":
+/*!*************************************!*\
+  !*** ./src/saveNote/errorRemove.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   errorRemove: () => (/* binding */ errorRemove)\n/* harmony export */ });\nfunction errorRemove () {\n    const errorRem = document.querySelector('#errorMessage');\n    errorRem.remove();\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/saveNote/errorRemove.js?");
 
 /***/ }),
 
@@ -296,7 +276,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   pushDetails: () => (/* binding */ pushDetails)\n/* harmony export */ });\n/* harmony import */ var _errorDiv__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./errorDiv */ \"./src/saveNote/errorDiv.js\");\n/* harmony import */ var _miscModules_stringify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../miscModules/stringify */ \"./src/miscModules/stringify.js\");\n/* harmony import */ var _miscModules_parse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../miscModules/parse */ \"./src/miscModules/parse.js\");\n/* harmony import */ var _miscModules_localStoragePush__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../miscModules/localStoragePush */ \"./src/miscModules/localStoragePush.js\");\n\n\n\n\nfunction pushDetails () {\nconst noteDetails = {\n        noteTitle:document.getElementById(\"titleInput\").value,\n        noteDescription:document.getElementById(\"descriptionInput\").value,\n        noteNotes:document.getElementById(\"noteInput\").value,\n        noteDate:document.getElementById('dateInput').value,\n    };\n    if (localStorage.getItem('notes') == null) {\n        const noteList = (0,_miscModules_stringify__WEBPACK_IMPORTED_MODULE_1__.straingified)(noteDetails);\n        localStorage.setItem('notes', noteList);\n        }\n    else {\n        const newNote = (0,_miscModules_parse__WEBPACK_IMPORTED_MODULE_2__.parsified)(localStorage.getItem(\"notes\"));\n        const newNoteList = [...newNote, noteDetails];\n        localStorage.setItem('notes', (0,_miscModules_stringify__WEBPACK_IMPORTED_MODULE_1__.straingified)(newNoteList))\n        }\n    }\n\n\n//# sourceURL=webpack://to-do-list-project/./src/saveNote/pushDetails.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   pushDetails: () => (/* binding */ pushDetails)\n/* harmony export */ });\n/* harmony import */ var _errorDiv__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./errorDiv */ \"./src/saveNote/errorDiv.js\");\n/* harmony import */ var _errorRemove__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./errorRemove */ \"./src/saveNote/errorRemove.js\");\n\n\nfunction pushDetails () {\nconst noteDetails = {\n        noteTitle:document.getElementById(\"titleInput\").value,\n        noteDescription:document.getElementById(\"descriptionInput\").value,\n        noteNotes:document.getElementById(\"noteInput\").value,\n        noteDate:document.getElementById('dateInput').value,\n    };\n    if (noteDetails.noteTitle == ''){\n        (0,_errorDiv__WEBPACK_IMPORTED_MODULE_0__.errorDiv)();\n    }\n    else{\n        if (localStorage.getItem('notes') == null) {\n            const noteList = JSON.stringify([noteDetails]);\n            localStorage.setItem('notes', noteList);\n            (0,_errorRemove__WEBPACK_IMPORTED_MODULE_1__.errorRemove)();\n        }\n        else {\n            const newNote = JSON.parse(localStorage.getItem('notes'));\n            const newNoteList = [...newNote, noteDetails];\n            localStorage.setItem('notes', JSON.stringify(newNoteList));\n            console.log(JSON.parse(localStorage.getItem('notes')))\n            ;(0,_errorRemove__WEBPACK_IMPORTED_MODULE_1__.errorRemove)();\n        }\n}\n}\n\n\n//# sourceURL=webpack://to-do-list-project/./src/saveNote/pushDetails.js?");
 
 /***/ }),
 

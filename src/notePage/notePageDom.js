@@ -2,9 +2,9 @@ import { pushDetails } from "../saveNote/pushDetails";
 import { makeInputDom } from "../miscModules/typeInputDom";
 import { makeDom } from "../miscModules/dividantDom";
 function invokeTextFieldDom () {
-makeDom ('#content', 'div', 'inputMainDiv')
-makeDom ('#inputMainDiv', 'div', 'inputSubDiv')
-makeInputDom ('#inputSubDiv', 'textarea', '', 'titleInput', '', 'Tile');
+makeInputDom('#content', 'div', '', 'inputMainDiv')
+makeInputDom('#inputMainDiv', 'div', '', 'inputSubDiv')
+makeInputDom ('#inputSubDiv', 'textarea', '', 'titleInput', '', 'Tile')
 makeInputDom ('#inputSubDiv', 'textarea', '', 'descriptionInput', '', 'Description');
 makeInputDom ('#inputSubDiv', 'textarea', '', 'noteInput', '', 'Note...');
 makeInputDom ('#inputSubDiv', 'div', ' ', 'bottomNoteDiv', '', '');
