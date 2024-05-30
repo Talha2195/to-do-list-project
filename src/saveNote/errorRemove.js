@@ -1,5 +1,5 @@
 function errorRemove () {
-    const errorRem = document.querySelector('#errorMessage');
-    errorRem.remove();
+let element = document.getElementById('errorMessage');
+element.remove();
 }
 export {errorRemove};

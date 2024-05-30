@@ -1,5 +1,4 @@
-import { errorDiv } from "./errorDiv";
-import { errorRemove } from "./errorRemove";
+import { localStore } from "./storeLocalSotrage";
 function pushDetails () {
 const noteDetails = {
         noteTitle:document.getElementById("titleInput").value,
@@ -7,22 +6,13 @@ const noteDetails = {
         noteNotes:document.getElementById("noteInput").value,
         noteDate:document.getElementById('dateInput').value,
     };
-    if (noteDetails.noteTitle == ''){
-        errorDiv();
+     const errorDiv = document.getElementById('errorMessage'); 
+    if (noteDetails.noteTitle.trim() === '') {
+        errorDiv.style.display = 'block';
     }
-    else{
-        if (localStorage.getItem('notes') == null) {
-            const noteList = JSON.stringify([noteDetails]);
-            localStorage.setItem('notes', noteList);
-            errorRemove();
-        }
-        else {
-            const newNote = JSON.parse(localStorage.getItem('notes'));
-            const newNoteList = [...newNote, noteDetails];
-            localStorage.setItem('notes', JSON.stringify(newNoteList));
-            console.log(JSON.parse(localStorage.getItem('notes')))
-            errorRemove();
-        }
-}
+    else {
+        errorDiv.style.display = 'none';
+        localStore(noteDetails);
+    }
 }
 export {pushDetails}
