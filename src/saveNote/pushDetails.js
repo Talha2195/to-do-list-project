@@ -1,18 +1,16 @@
 import { localStore } from "./storeLocalSotrage";
+import { clearInputFields } from "../miscModules/clearInputField";
+import { userInput } from "./userInputs";
 function pushDetails () {
-const noteDetails = {
-        noteTitle:document.getElementById("titleInput").value,
-        noteDescription:document.getElementById("descriptionInput").value,
-        noteNotes:document.getElementById("noteInput").value,
-        noteDate:document.getElementById('dateInput').value,
-    };
+    let userFields = userInput();
      const errorDiv = document.getElementById('errorMessage'); 
-    if (noteDetails.noteTitle.trim() === '') {
+    if (userFields.noteTitle.trim() === '') {
         errorDiv.style.display = 'block';
     }
     else {
         errorDiv.style.display = 'none';
-        localStore(noteDetails);
+        localStore(userFields);
+        clearInputFields();
     }
 }
 export {pushDetails}

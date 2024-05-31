@@ -265,6 +265,7 @@ details #nameTag::-webkit--#existingProjects-marker {
     flex-direction: column;
 }
 #inputSubDiv {
+    background-color: #f08080;
     display:flex;
     flex-direction: column;
     width: 70%;
@@ -281,6 +282,12 @@ details #nameTag::-webkit--#existingProjects-marker {
     font-size: 16px;
     background: none;
     resize: none;
+    transition: background 0.25s;
+}
+#inputSubDiv > textarea:focus-within {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 18px;
 }
 #titleInput {
     height: 10%;
@@ -335,3 +342,36 @@ details #nameTag::-webkit--#existingProjects-marker {
     background-color: #f08080;
 }
 /*//////////////////////////////////////////////////////////////////////////////*/
+#allProjectsMainDiv {
+    height: 100%;
+}
+#allProjectsSubDiv {
+    display:flex;
+    margin-top: 8%;
+    height: 80%;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+#allProjectsSubDiv > div{
+    background-color: #f08080;
+    height: 30%;
+    width: 20%;
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+#allProjectsSubDiv > div > button {
+    border: none;
+    outline: none;
+    background-color: #f08080;
+}
+#allProjectsSubDiv > div > button:hover{
+    background:#909090;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#allProjectsSubDiv > div > button:active{
+    background-color: #333;
+}
