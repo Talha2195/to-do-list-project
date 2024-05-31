@@ -11,4 +11,4 @@ makeInputDom ('#bottomNoteDiv', 'input', '', 'dateInput', 'date', '');
 makeInputDom ('#bottomNoteDiv', 'button','Save', 'editButton');
 makeInputDom ('#inputMainDiv', 'div', 'Can not save note without a title!', 'errorMessage', '', '', 'display: none;');
 }
-export{invokeEditButtonDom};
+export{invokeEditButtonDom}; 

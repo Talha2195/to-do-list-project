@@ -1,5 +1,5 @@
-function deleteButtonFunction () {
+function deleteButtonFunction (index, notes) {
     notes.splice(index, 1);
     localStorage.setItem('notes', JSON.stringify(notes));
-    noteDiv.remove();
 } 
+export{deleteButtonFunction}

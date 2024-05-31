@@ -375,3 +375,20 @@ details #nameTag::-webkit--#existingProjects-marker {
 #allProjectsSubDiv > div > button:active{
     background-color: #333;
 }
+#editButton{
+    background: none;
+    outline: none;
+    border: none;
+    height: 80%;
+    width: 20%;
+    font-size: 16px;
+    float:right;
+}
+#editButton:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+#editButton:active{
+    background-color: #909090;
+}

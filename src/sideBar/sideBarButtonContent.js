@@ -5,11 +5,5 @@ makeInputDom ('#leftBarContentDiv', 'button', 'New Note', 'newNote');
 createImage('#newNote', 'img', 'plusicon', 'plus icon');
 makeInputDom ('#leftBarContentDiv', 'button', 'All Projects', 'upcoming');
 createImage ('#upcoming', 'img', 'upcomingIcon', 'calender icon');
-makeInputDom ('#leftBarContentDiv', 'details', '', 'existingProjects');
-makeInputDom ('#existingProjects', 'summary', 'Upcoming Projects', 'nameTag');
-makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonOne');
-makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonTwo');
-makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonThree');
-makeInputDom ('#existingProjects', 'button', 'genericButton', 'genericButtonFour');
 }
 export{invokeSideBarButton};
